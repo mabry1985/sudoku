@@ -1,7 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { unregister } from './core';
+import { ThemeProvider } from 'styled-components';
 
-ReactDOM.render(<div>Hello World</div>, document.getElementById('root'));
+import { unregister } from './core';
+import { GlobalStyles, theme } from './styles';
+
+ReactDOM.render(
+  <ThemeProvider theme={theme}>
+    <GlobalStyles/>
+    <div>Hello World</div>
+  </ThemeProvider>,
+document.getElementById('root'));
 
 unregister();
