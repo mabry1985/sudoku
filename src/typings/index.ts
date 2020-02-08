@@ -1,4 +1,3 @@
-
 export type GRID = [ROW, ROW, ROW, ROW, ROW, ROW, ROW, ROW, ROW,];
 
 export type N = 0 | NUMBERS;
